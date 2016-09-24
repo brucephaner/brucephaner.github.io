@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hello, 无常" />
+  <meta name="keywords" content="雕虫小技,git 分支维护," />
 
 
 
@@ -84,12 +84,26 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="无常">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。
+
+一天   有A,B两条产品路线，A和B的产品在喝聊">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多分支代码维护">
+<meta property="og:url" content="http://yoursite.com/2016/09/24/多分支代码同步/index.html">
 <meta property="og:site_name" content="无常">
+<meta property="og:description" content="由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。
+
+一天   有A,B两条产品路线，A和B的产品在喝聊">
+<meta property="og:image" content="http://oe01h5vmt.bkt.clouddn.com/photo/localHistoryShow.png">
+<meta property="og:image" content="http://oe01h5vmt.bkt.clouddn.com/photo/classUpdate.png">
+<meta property="og:image" content="http://oe01h5vmt.bkt.clouddn.com/photo/classAdd.png">
+<meta property="og:updated_time" content="2016-09-24T09:12:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="无常">
+<meta name="twitter:title" content="多分支代码维护">
+<meta name="twitter:description" content="由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。
+
+一天   有A,B两条产品路线，A和B的产品在喝聊">
+<meta name="twitter:image" content="http://oe01h5vmt.bkt.clouddn.com/photo/localHistoryShow.png">
 
 
 
@@ -110,9 +124,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/24/多分支代码同步/"/>
 
-  <title> 无常 </title>
+  <title> 多分支代码维护 | 无常 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -202,9 +214,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -224,10 +236,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/09/24/多分支代码同步/" itemprop="url">
-                  多分支代码维护
-                </a>
+                多分支代码维护
               
             
           </h1>
@@ -267,9 +276,7 @@
       
 
       
-        
-          
-            <p>   由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。</p>
+        <p>   由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。</p>
 <blockquote>
 <p>一天<br>   有A,B两条产品路线，A和B的产品在喝聊<br>   A:新调的召回策略不错，付费提高了XXX<br>   B:是吗 看来我们也得加上召回，<br>   …</p>
 <p>B:那个召回策略是你做的对吧<br>gg：好像是吧…<br>B:给我们也加上，就拷贝一些，瞬间的事情吧 hahaha..</p>
@@ -289,36 +296,45 @@
 </blockquote>
 <p>android studio 👍，这效率比以前的eclipse高多了 </p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/雕虫小技-git-分支维护/" rel="tag">#雕虫小技,git 分支维护</a>
+          
+        </div>
       
 
       
+
       
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -326,6 +342,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -345,8 +365,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -389,6 +418,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -485,6 +525,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
