@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[小程序-\>小目标]]></title>
+      <url>http://yoursite.com/2016/09/25/app-services/</url>
+      <content type="html"><![CDATA[<h3 id="微信的小程序一定会引爆"><a href="#微信的小程序一定会引爆" class="headerlink" title="微信的小程序一定会引爆"></a>微信的小程序一定会引爆</h3><p>原因有三个方面： </p>
+<ol>
+<li><p>微信是一个已由连接人与人的社交平台繁衍了连接人与服务的服务平台，公众号、订阅号的盛行就是其服务平台属性的有力支撑，但公众、订阅号的交互体验使得提供服务受限，只有自媒体资讯类一枝独秀，所以在连接人与服务上还有很大想象空间。沿着连接人与服务连接的思路，就应该提升平台的服务体验，所以小程序的诞生就是顺应提升平台服务体验，而其不受限于像xx号这种固定模板生成方式，提供基础交互元素让开发者更自由使用，让产品更有专属特性，不止是交互体验更是整体用户体验上的完整提升。</p>
+</li>
+<li><p>小程序这种轻应用概念在此之前也有平台玩过，像百度的直达号，但都玩不起来。一是搜索还是PC时代产物，用电脑去搜索连接服务有一定的使用门槛，但微信是移动属性，是用户24小时不离身的工具，是随时想到就能用到的，这种便捷和高效的服务体验是前所未有的。二是微信用户规模大使用频次高时长久，高频带动低频这是互联网惯用且很有效的伎俩，流量带来用户使用服务，更好的服务又会沉淀用户，形成良性生态循环。  </p>
+</li>
+<li><p>微信红利犹在。红利是指一个事物在拓荒期，在获取利润的成本低。像改革开放时的人口红利，是指当时人均工资低，使得代工厂这种低附加值的产业也能发展不错，但现在用工成本高了，就出现大量工厂倒闭的情况。微信这种社交平台的传播性使得获客成本偏低，这种社交红利可持续和增长迅速。 </p>
+</li>
+</ol>
+<blockquote>
+<p>看一张app排名，可以想象腾讯系的QQ在微信之后也会集成小程序，就像当初的公众号一样，估计排名后面的支付宝淘宝也会有类似跟进</p>
+</blockquote>
+<p><img src="http://img.mp.itc.cn/upload/20160827/85a16d0256414559b60959efb839f486_th.png" alt="MacDown logo">  </p>
+<blockquote>
+<p>小程序会爆发，但是无法代替原生应用，会相互发展</p>
+</blockquote>
+<hr>
+<blockquote>
+<blockquote>
+<p>现在正是通过小程序迈向小目标的时候(^0^)</p>
+</blockquote>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[多分支代码同步维护]]></title>
+      <url>http://yoursite.com/2016/09/24/multi-branch-sync/</url>
+      <content type="html"><![CDATA[<p>   由于产品分化，考虑在原有仓库基础上分两个分支开发维护，经常就会有一个分支的代码需要同步到另一个分支的问题，像bug修复、新功能迁移都会碰到，这种体力活考验牙齿的忍耐力…发挥人类善于从经验中学习的高级技能，发现可以利用android studio 的local history功能实现快速同步，比利用compare之类的比对工具好用多了。</p>
+<blockquote>
+<p>一天<br>   有A,B两条产品路线，A和B的产品在喝聊<br>   A:新调的召回策略不错，付费提高了XXX<br>   B:是吗 看来我们也得加上召回，<br>   …</p>
+<p>B:那个召回策略是你做的对吧<br>gg：好像是吧…<br>B:给我们也加上，就拷贝一些，瞬间的事情吧 hahaha..</p>
+<p>gg:你们喝的是三鹿吧</p>
+<p>最后</p>
+<p>打开sudio<br>…</p>
+</blockquote>
+<p>需求：把A分支的部分代码同步到B分支  </p>
+<blockquote>
+<ul>
+<li>步骤  <ol>
+<li>先切换到A分支，然后更新代码,此时本地已有目标代码；（用SourceTree    做仓库分支管理更便捷）  </li>
+<li>然后切换到B分支，再找到对应功能的包或类文件，<br>如果是类文件，直接右键-local history -&gt;show history 这时候出现历史版本的比对视图  </li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><img src="http://oe01h5vmt.bkt.clouddn.com/photo/localHistoryShow.png" alt="MacDown logo">  </p>
+<blockquote>
+<p>不用我再跟你说啥了吧，Revert或者只移动部分代码都很easy；    </p>
+</blockquote>
+<p><img src="http://oe01h5vmt.bkt.clouddn.com/photo/classUpdate.png" alt="MacDown logo">  </p>
+<blockquote>
+<p>如果有新增文件，找到对应的包-&gt;右键,如下，看到历史文件没？Revert，搞定  </p>
+</blockquote>
+<p><img src="http://oe01h5vmt.bkt.clouddn.com/photo/classAdd.png" alt="MacDown logo"></p>
+<p>android studio 👍，这效率比以前的eclipse高多了</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
